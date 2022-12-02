@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.container{
+    position: relative;
+    top: 150px;
+    margin: auto;
+    width: 450px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.container  h4{
+    text-align: center;
+    position: relative;
+    top: -60px;
+}
+
+.contain p{
+    margin: 0;
+    position: relative;
+    top: -90px;
+    font-size: 30px;
+}
+
+.image img{
+    position: relative;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    top: 150px;
+    border: 1px solid black;
+}
+
+.image{
+    margin: auto;
+}
+.main{
+    margin: auto;
+    display: flex;
+}
