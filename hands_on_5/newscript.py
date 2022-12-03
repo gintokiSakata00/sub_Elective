@@ -1,4 +1,4 @@
-
+html_template = """
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
         <link rel="stylesheet" href="style.css">
         <title>PYSCRIPT</title>
+        
+        
     </head>
     <body>
     <div class="main">
@@ -18,19 +20,19 @@
             <div class="contain">
             <p><label id="status"></label></p>
             <p><label id="port"></label></p>
+            <p><label id="guess"></label></p>
             <p><label id="password"></label></p>
                 
             </div>
         </div>
  
-    <py-script>
-pyscript.write('port', 'Port: 8000')
-pyscript.write('status','Status: HACKED COMPLETED!')
-pyscript.write('password', 'Password: victor')
-</py-script>
-<div class="image">
-<img src="./images/happy.jpg" ></img>
-</div>
-</div>
-</body>
-</html>
+    """
+    
+count=0
+with open("password_list.txt",'r') as password:
+        for key_pass in password:   
+            count+=1 
+            if "29A" in key_pass:
+                print(str(count))
+
+    
